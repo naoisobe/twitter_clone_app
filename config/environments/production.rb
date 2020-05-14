@@ -68,6 +68,9 @@ Rails.application.configure do
     :enable_starttls_auto => true
   }
   
+   # アップロードされたファイルをAWSに保存する
+  config.active_storage.service = :amazon
+  
   # Use a different cache store in production.
   # config.cache_store = :mem_cache_store
 
